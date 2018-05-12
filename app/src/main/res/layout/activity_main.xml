@@ -4,17 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:opencv="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/img"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:layout_centerInParent="true" />
-
+  <org.opencv.android.JavaCameraView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:visibility="gone"
+      android:id="@+id/tutoriall_activity_java_surface_view"
+      opencv:show_fps="true"
+      opencv:camera_id="any"/>
 </RelativeLayout>
